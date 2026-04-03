@@ -1,77 +1,31 @@
-# Study Marks Prediction (Linear Regression from Scratch)
+# Study Hours vs Marks Predictor
 
-This project implements **Linear Regression from scratch using NumPy** to predict student marks based on study hours.
+A linear regression model built from scratch using only NumPy — no sklearn, no shortcuts.
 
----
+## What it does
+Predicts a student's marks based on the number of hours they studied.
 
-## 🚀 Key Highlights
+## How it works
+- Implements **gradient descent** manually to train the model
+- Uses **MSE (Mean Squared Error)** as the cost function
+- Plots the regression line using Matplotlib
 
-* Built Linear Regression **without using scikit-learn**
-* Implemented **Mean Squared Error (MSE)** manually
-* Used **Gradient Descent** for optimization
-* Visualized results using **Matplotlib**
+## Tech Stack
+- Python
+- NumPy
+- Matplotlib
+- Jupyter Notebook
 
----
+## Sample Prediction
+Predicted marks for 7 hours of study: 72.8
 
-## 🧠 How It Works
+## Concepts from Andrew Ng's ML Specialization (Week 1)
+- Linear Regression
+- Cost Function
+- Gradient Descent
+- Feature Normalization
 
-1. Initialize weights and bias
-2. Compute predictions using linear equation
-3. Calculate error using MSE
-4. Update weights using Gradient Descent
-5. Repeat until convergence
-
----
-
-## 📊 Visualization
-
-* Study Hours vs Marks (scatter plot)
-* Best fit regression line
-
----
-
-## 🛠 Tech Stack
-
-* Python
-* NumPy
-* Matplotlib
-
----
-
-## 📈 Example Prediction
-
-For a student who studies **7 hours**,
-the model predicts approximately **72.8 marks**.
-
-```python
-predict(7)  # Output: 72.8
-```
-
----
-
-## 📌 Learning Outcome
-
-* Understood how Linear Regression works internally
-* Learned how Gradient Descent updates weights
-* Gained hands-on experience implementing ML without libraries
-
----
-
-## 📂 Project Structure
-
-```
-study_marks_ml/
-│── study_marks.ipynb
-│── data.csv
-│── README.md
-```
-
----
-
-## 💡 Future Improvements
-
-* Add multiple features (multivariable regression)
-* Compare with scikit-learn implementation
-* Convert into a small web app (Streamlit/Flask)
-
----
+## How to run
+1. Clone the repo
+2. Open `study_marks.ipynb` in Jupyter or PyCharm
+3. Run all cells top to bottom
